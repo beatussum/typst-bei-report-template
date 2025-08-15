@@ -21,8 +21,8 @@ A short description about the project and/or client.
     - [ ] on this repo, create a secret `REGISTRY_TOKEN` (at `https://github.com/[user]/[repo]/settings/secrets/actions`) that contains the so created token
 
     if configured correctly, whenever you create a tag `v...`, your package will be pushed onto a branch on the `REGISTRY_REPO`, from which you can then create a pull request against [typst/packages](https://github.com/typst/packages/)
-- [ ] remove/replace the example test case
-- [ ] (add your actual code, docs and tests)
+- [x] remove/replace the example test case
+- [x] (add your actual code, docs and tests)
 - [ ] remove this section from the README
 
 ## Getting Started
@@ -30,10 +30,37 @@ A short description about the project and/or client.
 These instructions will get you a copy of the project up and running on the typst web app. Perhaps a short code example on importing the package and a very simple teaser usage.
 
 ```typ
-#import "@preview/my-package:0.1.0": *
+#import "@preview/ensimag:0.1.0": ensimag
 
-#show: my-show-rule.with()
-#my-func()
+#show: ensimag.with(
+  logos: (
+    company: rect([MON ENTREPRISE]),
+    ensimag: rect([ENSIMAG]),
+  ),
+  title: [A Typesetting System to Untangle the Scientific Writing Process],
+  author: (
+    name: "Martin Haug",
+    year: [3#super[e] année],
+    option: [ISI],
+  ),
+  period: (
+    begin: datetime(year: 1970, month: 01, day: 01),
+    end: datetime(year: 1970, month: 03, day: 01),
+  ),
+  company: (
+    name: [mon entreprise],
+    address: [
+      1 cours Jean Jaurès \
+      38000 Grenoble
+    ]
+  ),
+  internship_tutor: [Charles Dupond],
+  school_tutor: [Charles Dupont],
+  abstract: [
+    The process of scientific writing is often tangled up with the intricacies of typesetting, leading to frustration and wasted time for researchers. In this paper, we introduce Typst, a new typesetting system designed specifically for scientific writing. Typst untangles the typesetting process, allowing researchers to compose papers faster. In a series of experiments we demonstrate that Typst offers several advantages, including faster document creation, simplified syntax, and increased ease-of-use.
+  ],
+  index-terms: ("Scientific writing", "Typesetting", "Document creation", "Syntax"),
+)
 ```
 
 <picture>
