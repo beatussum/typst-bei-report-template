@@ -28,8 +28,4 @@
   ),
   internship_tutor: [Charles Dupond],
   school_tutor: [Charles Dupont],
-  abstract: [
-    The process of scientific writing is often tangled up with the intricacies of typesetting, leading to frustration and wasted time for researchers. In this paper, we introduce Typst, a new typesetting system designed specifically for scientific writing. Typst untangles the typesetting process, allowing researchers to compose papers faster. In a series of experiments we demonstrate that Typst offers several advantages, including faster document creation, simplified syntax, and increased ease-of-use.
-  ],
-  index-terms: ("Scientific writing", "Typesetting", "Document creation", "Syntax"),
 )
