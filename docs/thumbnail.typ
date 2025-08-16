@@ -1,6 +1,7 @@
 #import "/src/lib.typ": ensimag
 
 // style thumbnail for light and dark theme
+#set page(fill: none)
 #let theme = sys.inputs.at("theme", default: "light")
 #set text(white) if theme == "dark"
 
