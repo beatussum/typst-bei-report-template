@@ -3,6 +3,7 @@
 // style thumbnail for light and dark theme
 #set page(fill: none)
 #let theme = sys.inputs.at("theme", default: "light")
+#set rect(stroke: 1pt + white) if theme == "dark"
 #set text(white) if theme == "dark"
 
 #show: ensimag.with(
