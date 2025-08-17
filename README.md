@@ -11,7 +11,7 @@ The first page corresponds to the one required by [ENSIMAG](https://ensimag.gren
 ## Getting Started
 
 ```typ
-#import "@preview/ensimag:0.1.0": ensimag
+#import "@preview/ensimag-internship-report:0.1.0": ensimag
 
 #show: ensimag.with(
   logos: (
