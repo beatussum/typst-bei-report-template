@@ -28,6 +28,6 @@
       38000 Grenoble
     ]
   ),
-  internship_tutor: [Charles Dupond],
-  school_tutor: [Charles Dupont],
+  internship-tutor: [Charles Dupond],
+  school-tutor: [Charles Dupont],
 )

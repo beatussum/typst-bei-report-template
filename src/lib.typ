@@ -57,7 +57,7 @@
   /// Please see the #link(https://typst.app/docs/reference/foundations/datetime/#format)[format syntax].
   ///
   /// -> auto | str
-  date_fmt: auto,
+  date-fmt: auto,
 
   /// The informations about the company
   /// -> dict
@@ -73,11 +73,11 @@
 
   /// The internship tutor
   /// -> content | none
-  internship_tutor: none,
+  internship-tutor: none,
 
   /// The school tutor
   /// -> content | none
-  school_tutor: none,
+  school-tutor: none,
 
   /// The paper's abstract
   ///
@@ -260,15 +260,15 @@
       align: center,
       colspan: 2,
       {
-        let top_title = text(14pt)[
+        let top-title = text(14pt)[
           Grenoble INP --- ENSIMAG \
           École Nationale Supérieure d'Informatique et de Mathématiques Appliquées
         ]
 
-        let main_title = text(22pt)[Rapport de Stage Assistant Ingénieur]
+        let main-title = text(22pt)[Rapport de Stage Assistant Ingénieur]
         let subtitle = text(14pt)[Effectué chez #company.name]
 
-        let big_title = rect(
+        let big-title = rect(
           inset: 8pt,
           stroke: 2pt,
           width: 100%,
@@ -281,18 +281,18 @@
         ]
 
         let date = text(12pt)[
-          #period.begin.display(date_fmt)
+          #period.begin.display(date-fmt)
           ---
-          #period.end.display(date_fmt)
+          #period.end.display(date-fmt)
         ]
 
-        top_title
+        top-title
         v(3fr)
-        main_title
+        main-title
         v(1fr)
         subtitle
         v(2fr)
-        big_title
+        big-title
         v(2fr)
         extra
         v(10pt)
@@ -306,10 +306,10 @@
     ],
     [
       *Responsable de stage* \
-      #internship_tutor
+      #internship-tutor
 
       *Tuteur de l'école* \
-      #school_tutor
+      #school-tutor
     ],
   )
 

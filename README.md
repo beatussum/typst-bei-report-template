@@ -35,8 +35,8 @@ The first page corresponds to the one required by [ENSIMAG](https://ensimag.gren
       38000 Grenoble
     ]
   ),
-  internship_tutor: [Charles Dupond],
-  school_tutor: [Charles Dupont],
+  internship-tutor: [Charles Dupond],
+  school-tutor: [Charles Dupont],
 )
 ```
 
@@ -58,10 +58,10 @@ This template exports the `ensimag` function with the following named arguments:
 - `title` - The paper's title as _content_.
 - `author` - A dictionary which must have the `name` (_str_ or an _array_), `year` (_content_) and `option` (_content_) keys.
 - `period` - A dictionary which must have the `begin` and the `end` date (_datetime_).
-- `date_fmt` - The date format string used (see the [format syntax](https://typst.app/docs/reference/foundations/datetime/#format)).
+- `date-fmt` - The date format string used (see the [format syntax](https://typst.app/docs/reference/foundations/datetime/#format)).
 - `company` - A dictionary describing the information about the company with its `name` (_content_) and its `address` (_content_).
-- `internship_tutor` - The internship tutor (_content_).
-- `school_tutor` - The school tutor (_content_).
+- `internship-tutor` - The internship tutor (_content_).
+- `school-tutor` - The school tutor (_content_).
 - `abstract` - The content of a brief summary of the paper or `none`.
   Appears at the top of the first column in boldface.
 - `index-terms` - Array of index terms to display after the abstract.
