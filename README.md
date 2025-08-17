@@ -1,11 +1,16 @@
-# The `my-package` Package
+# The `ensimag-internship-report` Package
+
 <div align="center">Version 0.1.0</div>
 
-A short description about the project and/or client.
+This project is based on the [charged-ieee](https://github.com/typst/templates/tree/main/charged-ieee) Typst template.
+
+This is a _Typst template_ for a two-column paper from the proceedings of the [Institute of Electrical and Electronics Engineers](https://www.ieee.org/).
+The paper is tightly spaced, fits a lot of content and comes preconfigured for numeric citations from _BibLaTeX_ or _Hayagriva_ files.
+The first page corresponds to the one required by [ENSIMAG](https://ensimag.grenoble-inp.fr/) for internship reports.
 
 ## Template adaptation checklist
 
-- [ ] Fill out `README.md`
+- [x] Fill out `README.md`
   - Change the `my-package` package name, including code snippets
   - Check section contents and/or delete sections that don't apply
 - [x] Check and/or replace `LICENSE` by something that suits your needs
@@ -26,8 +31,6 @@ A short description about the project and/or client.
 - [ ] remove this section from the README
 
 ## Getting Started
-
-These instructions will get you a copy of the project up and running on the typst web app. Perhaps a short code example on importing the package and a very simple teaser usage.
 
 ```typ
 #import "@preview/ensimag:0.1.0": ensimag
@@ -56,41 +59,48 @@ These instructions will get you a copy of the project up and running on the typs
   ),
   internship_tutor: [Charles Dupond],
   school_tutor: [Charles Dupont],
-  abstract: [
-    The process of scientific writing is often tangled up with the intricacies of typesetting, leading to frustration and wasted time for researchers. In this paper, we introduce Typst, a new typesetting system designed specifically for scientific writing. Typst untangles the typesetting process, allowing researchers to compose papers faster. In a series of experiments we demonstrate that Typst offers several advantages, including faster document creation, simplified syntax, and increased ease-of-use.
-  ],
-  index-terms: ("Scientific writing", "Typesetting", "Document creation", "Syntax"),
 )
 ```
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./thumbnail-dark.svg">
-  <img src="./thumbnail-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="./thumbnail-dark.svg"/>
+  <img src="./thumbnail-light.svg"/>
 </picture>
 
 ### Installation
 
-A step by step guide that will tell you how to get the development environment up and running. This should explain how to clone the repo and where to (maybe a link to the typst documentation on it), along with any pre-requisite software and installation steps.
-
-```
-$ First step
-$ Another step
-$ Final step
+```console
+$ typst init "@preview/ensimag-internship-report" [DIR]
 ```
 
 ## Usage
 
-A more in-depth description of usage. Any template arguments? A complicated example that showcases most if not all of the functions the package provides? This is also an excellent place to signpost the manual.
+This template exports the `ensimag` function with the following named arguments:
+- `logos` - A dictionary which must have the `company` and `ensimag` logos (_content_).
+- `title` - The paper's title as _content_.
+- `author` - A dictionary which must have the `name` (_str_ or an _array_), `year` (_content_) and `option` (_content_) keys.
+- `period` - A dictionary which must have the `begin` and the `end` date (_datetime_).
+- `date_fmt` - The date format string used (see the [format syntax](https://typst.app/docs/reference/foundations/datetime/#format)).
+- `company` - A dictionary describing the information about the company with its `name` (_content_) and its `address` (_content_).
+- `internship_tutor` - The internship tutor (_content_).
+- `school_tutor` - The school tutor (_content_).
+- `abstract` - The content of a brief summary of the paper or `none`.
+  Appears at the top of the first column in boldface.
+- `index-terms` - Array of index terms to display after the abstract.
+  Shall be `content`.
+- `paper-size` - Defaults to `a4`.
+  Specify a [paper size string](https://typst.app/docs/reference/layout/page/#parameters-paper) to change the page format.
+- `bibliography` - The result of a call to the `bibliography` function or `none`.
+  Specifying this will configure numeric, IEEE-style citations.
+- `figure-supplement` - How figures are referred to from within the text.
+  Use `"Figure"` instead of `"Fig."` for computer-related publications.
 
-```typ
-#import "@preview/my-package:0.1.0": *
+The function also accepts a single, positional argument for the body of the paper.
 
-#let my-complicated-example = ...
-```
+The template will initialize your package with a sample call to the `ensimag` function in a show rule.
+If you want to change an existing project to use this template, you can add a show rule like described [above](#getting-started).
 
-## Additional Documentation and Acknowledgments
+## Licenses
 
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
+As explained above, the code of this software is licensed under GPL-3 or any later version.
+Details of the rights applying to the various third-party files are described in the [copyright](copyright) file in [the Debian `debian/copyright` file format](https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/).
