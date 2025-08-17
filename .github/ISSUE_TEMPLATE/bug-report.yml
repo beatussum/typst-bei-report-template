@@ -1,0 +1,51 @@
+name: Bug report
+description: File a bug report
+title: "[Bug]: "
+labels: ["bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this bug report!
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: e.g. email@example.com
+
+  - type: textarea
+    id: what-happened
+
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+
+      description: |
+        Please copy and paste any relevant log output.
+        This will be automatically formatted into code, so no need for backticks.
+
+      render: shell
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of conduct
+
+      description: |
+        By submitting this issue, you agree to follow our [code of conduct](https://github.com/beatussum/typst-ensimag-internship-report-template/blob/develop/CODE_OF_CONDUCT.md).
+
+      options:
+        - label: I agree to follow this project's code of conduct
+          required: true
