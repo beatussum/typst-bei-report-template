@@ -22,9 +22,13 @@ exclude = [
   "scripts",
   "tests",
   ".typstignore",
+  "CODE_OF_CONDUCT.md",
+  "CONTRIBUTING.md",
   "Justfile",
+  "SECURITY.md",
   "thumbnail-dark.svg",
   "thumbnail-light.svg",
+  "thumbnail.png",
 ]
 
 [template]

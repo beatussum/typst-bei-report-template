@@ -7,10 +7,15 @@
 # - `*` in patterns works, but also matches directory separators: `*.typ` _will_ match `src/x.typ`
 # .git and .typstignore are excluded automatically
 
+
 .github
 scripts
 tests
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
 Justfile
+SECURITY.md
+
 # PDF manuals should be included so that they can be linked, but not their sources
 docs/*
 !docs/*.pdf
