@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: typst-ensimag-internship-report-template
+Upstream-Name: typst-bei-report-template
 Upstream-Contact: Mattéo Rossillol‑‑Laruelle <beatussum@protonmail.com>
-Source: https://github.com/beatussum/typst-ensimag-internship-report-template
+Source: https://github.com/beatussum/typst-bei-report-template
 License: GPL-3+
 Copyright: 2025 Mattéo Rossillol‑‑Laruelle <beatussum@protonmail.com>
 

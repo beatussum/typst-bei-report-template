@@ -26,18 +26,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
-## [0.1.1] - 2025-08-17
+## [0.1.0] - 2025-08-19
 
 ### Added
 
-- Switch to kebab-case.
-- Exclude community files from universe.
 - Add the `copyright` file.
-
-## [0.1.0] - 2025-08-17
-
-### Added
-
 - Complete thumnail generation.
 - Add a Typst template and implement `ensimag()`.
 - Add an integration test.
@@ -50,6 +43,5 @@ to the corresponding tag on GitHub, or the diff
 in comparison to the previous release
 -->
 
-[Unreleased]: https://github.com/beatussum/typst-ensimag-internship-report-template/compare/v0.1.0...HEAD
-[0.1.1]: https://github.com/beatussum/typst-ensimag-internship-report-template/releases/tag/v0.1.1
-[0.1.0]: https://github.com/beatussum/typst-ensimag-internship-report-template/releases/tag/v0.1.0
+[Unreleased]: https://github.com/beatussum/typst-bei-report-template/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/beatussum/typst-bei-report-template/releases/tag/v0.1.0

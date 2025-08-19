@@ -44,7 +44,7 @@ body:
       label: Code of conduct
 
       description: |
-        By submitting this issue, you agree to follow our [code of conduct](https://github.com/beatussum/typst-ensimag-internship-report-template/blob/develop/CODE_OF_CONDUCT.md).
+        By submitting this issue, you agree to follow our [code of conduct](https://github.com/beatussum/typst-bei-report-template/blob/develop/CODE_OF_CONDUCT.md).
 
       options:
         - label: I agree to follow this project's code of conduct

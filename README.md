@@ -1,6 +1,6 @@
-# The `ensimag-internship-report` Package
+# The `bei-report` Package
 
-<div align="center">Version 0.1.1</div>
+<div align="center">Version 0.1.0</div>
 
 This project is based on the [charged-ieee](https://github.com/typst/templates/tree/main/charged-ieee) Typst template.
 
@@ -11,7 +11,7 @@ The first page corresponds to the one required by [ENSIMAG](https://ensimag.gren
 ## Getting Started
 
 ```typ
-#import "@preview/ensimag-internship-report:0.1.1": ensimag
+#import "@preview/bei-report:0.1.0": ensimag
 
 #show: ensimag.with(
   logos: (
@@ -48,7 +48,7 @@ The first page corresponds to the one required by [ENSIMAG](https://ensimag.gren
 ### Installation
 
 ```console
-$ typst init "@preview/ensimag-internship-report" [DIR]
+$ typst init "@preview/bei-report" [DIR]
 ```
 
 ## Usage
