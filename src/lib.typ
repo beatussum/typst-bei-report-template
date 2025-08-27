@@ -233,14 +233,17 @@
         h(7pt, weak: true)
       }
       it.body
-    } else [
+    } else if it.level == 3 {
       // Third level headings are run-ins too, but different.
-      #if it.level == 3 {
-        numbering("a)", deepest)
-        [ ]
-      }
-      _#(it.body):_
-    ]
+      show: block.with(spacing: 8pt, sticky: true)
+      numbering("a) ", deepest)
+      set text(style: "italic")
+      it.body
+    } else {
+      show: block.with(above: 8pt, below: 5pt, sticky: true)
+      set text(style: "italic")
+      it.body
+    }
   }
 
   // Style bibliography.

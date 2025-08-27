@@ -57,7 +57,15 @@ Overall, we believe that Typst represents a significant step forward in the fiel
   caption: [Code example],
 ) <fig:code>
 
+== Second level header
+
+#lorem(45)
+
+=== Third level header
+
 @fig:code is a code example.
+
+==== Fourth level header
 
 #lorem(45)
 
