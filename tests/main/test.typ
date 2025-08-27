@@ -45,6 +45,20 @@ To demonstrate the potential of Typst, we conducted a series of experiments comp
 Overall, we believe that Typst represents a significant step forward in the field of scientific writing and typesetting, providing researchers with a valuable tool to streamline their workflow and focus on what really matters: their research. In the following sections, we will introduce Typst in more detail and provide evidence for its superiority over other typesetting systems in a variety of scenarios.
 
 = Methods <sec:methods>
+
+#figure(
+  ```cpp
+  #include <iostream>
+
+  int main() {
+    std::cout << "Hello world!" << std::endl;
+  }
+  ```,
+  caption: [Code example],
+) <fig:code>
+
+@fig:code is a code example.
+
 #lorem(45)
 
 $ a + b = gamma $ <eq:gamma>

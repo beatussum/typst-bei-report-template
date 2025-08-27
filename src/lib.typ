@@ -103,10 +103,8 @@
 
   /// How figures are referred to from within the text
   ///
-  /// Use "Figure" instead of "Fig." for computer-related publications.
-  ///
   /// -> content | none
-  figure-supplement: [Fig.],
+  figure-supplement: [Illustration],
 
   /// The paper's content
   /// -> content | none
@@ -139,8 +137,9 @@
   set figure.caption(separator: [. ])
   show figure: fig => {
     let prefix = (
-      if fig.kind == table [TABLE]
-      else if fig.kind == image [Fig.]
+      if fig.kind == table [Tableau]
+      else if fig.kind == image [Illustration]
+      else if fig.kind == raw [Listage]
       else [#fig.supplement]
     )
     let numbers = numbering(fig.numbering, ..fig.counter.at(fig.location()))
