@@ -1,4 +1,4 @@
-#import "@preview/bei-report:0.1.0": ensimag
+#import "@preview/bei-report:0.1.1": ensimag
 
 #show: ensimag.with(
   logos: (

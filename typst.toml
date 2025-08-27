@@ -1,6 +1,6 @@
 [package]
 name = "bei-report"
-version = "0.1.0"
+version = "0.1.1"
 compiler = "0.13.1"
 entrypoint = "src/lib.typ"
 authors = ["Mattéo Rossillol‑‑Laruelle <beatussum@protonmail.com>"]

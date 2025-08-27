@@ -1,6 +1,6 @@
 # The `bei-report` Package
 
-<div align="center">Version 0.1.0</div>
+<div align="center">Version 0.1.1</div>
 
 This project is based on the [charged-ieee](https://github.com/typst/templates/tree/main/charged-ieee) Typst template.
 
@@ -11,7 +11,7 @@ The first page corresponds to the one required by [ENSIMAG](https://ensimag.gren
 ## Getting Started
 
 ```typ
-#import "@preview/bei-report:0.1.0": ensimag
+#import "@preview/bei-report:0.1.1": ensimag
 
 #show: ensimag.with(
   logos: (
