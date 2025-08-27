@@ -246,7 +246,7 @@
   // Style bibliography.
   show std.bibliography: set text(8pt)
   show std.bibliography: set block(spacing: 0.5em)
-  set std.bibliography(title: text(10pt)[Réferences], style: "ieee")
+  set std.bibliography(title: text(10pt)[Références], style: "ieee")
 
   // Display the paper's first page, spanning all columns (hence floating at
   // the scope of the columns' parent, which is the page).
