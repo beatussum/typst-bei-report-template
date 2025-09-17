@@ -116,7 +116,7 @@
   // Set the body font.
   // As of 2024-08, the IEEE LaTeX template uses wider interword spacing
   // - See e.g. the definition \def\@IEEEinterspaceratioM{0.35} in IEEEtran.cls
-  set text(font: "TeX Gyre Termes", size: 10pt, spacing: .35em)
+  set text(font: "TeX Gyre Termes", lang: "fr", size: 10pt, spacing: .35em)
 
   // Enums numbering
   set enum(numbering: "1)a)i)")
