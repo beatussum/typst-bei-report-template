@@ -164,7 +164,6 @@
   set page(
     columns: 2,
     paper: paper-size,
-    numbering: "1",
     // The margins depend on the paper size.
     margin: if paper-size == "a4" {
       (x: 41.5pt, top: 80.51pt, bottom: 89.51pt)
@@ -324,6 +323,8 @@
     first
   )
 
+  set page(numbering: "1")
+  counter(page).update(1)
   set par(justify: true, first-line-indent: (amount: 1em, all: true), spacing: 0.5em, leading: 0.5em)
 
   // Display abstract and index terms.
