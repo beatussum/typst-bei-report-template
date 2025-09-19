@@ -136,17 +136,11 @@
   // references.
   set figure.caption(separator: [. ])
   show figure: fig => {
-    let prefix = (
-      if fig.kind == table [Tableau]
-      else if fig.kind == image [Illustration]
-      else if fig.kind == raw [Listage]
-      else [#fig.supplement]
-    )
     let numbers = numbering(fig.numbering, ..fig.counter.at(fig.location()))
     // Wrap figure captions in block to prevent the creation of paragraphs. In
     // particular, this means `par.first-line-indent` does not apply.
     // See https://github.com/typst/templates/pull/73#discussion_r2112947947.
-    show figure.caption: it => block[#prefix~#numbers#it.separator#it.body]
+    show figure.caption: it => block[#fig.supplement~#numbers#it.separator#it.body]
     show figure.caption.where(kind: table): smallcaps
     fig
   }
