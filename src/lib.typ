@@ -337,6 +337,9 @@
     v(2pt)
   }
 
+  // Display table of content
+  outline(depth: 3)
+
   // Display the paper's contents.
   body
 
