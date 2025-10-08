@@ -103,8 +103,8 @@
 
   /// How figures are referred to from within the text
   ///
-  /// -> content | none
-  figure-supplement: [Illustration],
+  /// -> auto | content | function | none
+  figure-supplement: auto,
 
   /// The paper's content
   /// -> content | none
