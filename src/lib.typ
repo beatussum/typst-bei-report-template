@@ -121,6 +121,12 @@
   // Enums numbering
   set enum(numbering: "1)a)i)")
 
+  // Set the link color
+  show link: it => {
+    set text(fill: gray)
+    it
+  }
+
   // Tables & figures
   show figure: set block(spacing: 15.5pt)
   show figure: set place(clearance: 15.5pt)
