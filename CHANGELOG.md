@@ -26,6 +26,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Security
 
+## [0.1.2] - 2025-10-08
+
+### Added
+
+- Add table of content.
+
+### Changed
+
+- First page is not numbered.
+- Switch to French.
+- `figure-supplement`: change default value.
+- `link`s: set color to grey.
+
+### Fixed
+
+- Remove useless translations.
+- Fix thumbnail generation.
+
 ## [0.1.1] - 2025-08-27
 
 ### Added
@@ -51,6 +69,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add an integration test.
 - Complete community files.
 
-[Unreleased]: https://github.com/beatussum/typst-bei-report-template/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/beatussum/typst-bei-report-template/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/beatussum/typst-bei-report-template/releases/tag/v0.1.2
 [0.1.1]: https://github.com/beatussum/typst-bei-report-template/releases/tag/v0.1.1
 [0.1.0]: https://github.com/beatussum/typst-bei-report-template/releases/tag/v0.1.0
