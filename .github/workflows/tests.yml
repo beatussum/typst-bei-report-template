@@ -53,7 +53,7 @@ jobs:
         run: just test
 
       - name: Archive test results
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         if: always()
         with:
           name: typst-${{ steps.setup-typst.outputs.typst-version }}-test-results
